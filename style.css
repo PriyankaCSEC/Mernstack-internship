@@ -1,0 +1,10 @@
+body{
+    font-family:monospace;
+}
+button{
+    background-color: rgba(123, 124, 123, 0.904);
+    color: beige;
+}
+li{
+    background-color: aquamarine;
+}

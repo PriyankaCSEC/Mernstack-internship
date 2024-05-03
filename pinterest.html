@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body>
+    <div class="h-screen w-full">
+        <div class="flex flex-col gap-6">
+          <div class="mt-4 flex flex-col items-center">
+            <img src="https://logohistory.net/wp-content/uploads/2023/07/Pinterest-Logo.svg" alt="pinterest" width="100" />
+          </div>
+          <div class="flex flex-row ">
+            <div class="flex flex-row gap-2 ml-7 mt-2" >
+                <div>
+                  <button id="button" class="rounded-full bg-black px-3 text-white py-2 " >Home</button>
+                </div>
+                <div>
+                  <button id="button" onclick="changeColor()" class="rounded-full bg-white px-3 text-black py-2 " >Explore</button>
+                </div>
+                <div>
+                  <button id="button" class="rounded-full bg-white px-3 text-black py-2 " >Create</button>
+                </div>
+                </div>
+          <div class="relative ml-7 flex w-full items-center justify-center py-2">
+            <input type="text" class=" w-full rounded-full border bg-gray-200 p-2 px-10 text-black" placeholder="search" />
+          </div>
+          <div class="absolute inset-x-72 px-2 inset-y-28">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search text-gray-500">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </div>
+          <div class="py-4 ml-3 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell text-gray-500"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </div>
+          <div class="py-3 ml-3 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-more text-gray-500">
+              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+              <path d="M8 12h.01" />
+              <path d="M12 12h.01" />
+              <path d="M16 12h.01" />
+            </svg>
+          </div>
+          <div class="py-3 mr-4 ml-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round text-gray-500"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          
+          </div>
+      
+          <div class="ml-4 mr-4 columns-1 gap-3 sm:columns-4 md:columns-6 lg:columns-7">
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/32/5f/70/325f70dee8744160fd89975343e5c3e1.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/c3/1c/56/c31c56ebf4b6a3c643c2acf8865bfdee.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/75/cf/ea/75cfeaf33da97873249c26e6c09554b2.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/ae/bc/47/aebc477271d0c2c6cada02f92d4a667c.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/3f/ea/02/3fea0205b2e36ac4086152f42be280f1.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/736x/48/80/37/488037afd6e6098fa9c8d36022642c88.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/38/55/2a/38552ad4d7effca147ac634827191bbe.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/9d/8c/45/9d8c45c779744aad66a58a8e61f82da7.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/f3/0e/b3/f30eb375824efb95d67aa344bcf67cdc.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/36/88/89/368889361dbc0155407b1777b67631a0.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/af/b6/de/afb6de9697ccb994c570767bf32dff80.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/12/71/e3/1271e34bfa34752e43ce981c4b20f152.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/61/e2/d1/61e2d100482a05d123d5114c83f05a18.jpg" alt="" />
+            <img class="mb-4 rounded-2xl" src="https://i.pinimg.com/564x/c6/56/c7/c656c7ca04651aeb2439a8ce2cf9560b.jpg" alt="" />
+      
+      
+          </div>
+        </div>
+      </div>
+      
+      
+     <script src="pinterest.js"></script> 
+</body>
+</html>

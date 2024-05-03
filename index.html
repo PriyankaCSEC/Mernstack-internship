@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My app</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body>
+   
+    <div class=" flex flex-col gap-5 px-40">
+        <h1 class="text-5xl   font-bold text-black-500 py-3 ">Todo</h1>
+        <div class="flex flex-row gap-3">
+        <input id="task-input" type="text" placeholder="enter task here" class="border-2  px-3 rounded-md bg-gray-50">
+        <button id="add-to-storage" class="border bg-red-500 px-5 text-white font-bold rounded-2xl hover:bg-red-200" >Add to local storage </button>
+        <button id="add-task-button" class="border bg-black px-5 text-white font-bold rounded-2xl hover:bg-gray-500" onclick="getTask()">Add </button>
+        <button id="deleteAll-task-button" class="border bg-red-500 px-5 text-white font-bold rounded-2xl hover:bg-red-200" onclick="deleteAll()">Delete all </button>
+  
+        </div>
+
+
+      <div>
+        <p>HERE ARE YOUR TODOS:
+        <span id="total-task"></span>
+        </p>
+      </div>
+
+
+      <div class="flex flex-col gap-5 ">
+        <ul id="task-list"></ul>
+     </div>
+      
+          
+  </div>
+      
+      
+      
+      
+    
+    <script src="script.js"></script>
+</body>
+</html>
